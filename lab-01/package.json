@@ -1,0 +1,22 @@
+{
+  "name": "lab-01",
+  "version": "1.0.0",
+  "description": "BDF Lab 1 - Node.js and Express Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:native": "node native-server.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "bdf-lab-1"
+  ],
+  "author": "G. AKSHAY",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
