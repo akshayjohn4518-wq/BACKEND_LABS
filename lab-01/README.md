@@ -166,26 +166,26 @@ Summary: 14/14 tests passed.
 
 ## Screenshots
 
-> **Note:** Screenshots are to be captured manually from the browser. Save each screenshot to `lab-01/screenshots/` using the exact filenames indicated below.
+Browser test results verified and captured:
 
 ### 1. Home Route (`GET /`)
 *Endpoint: `http://localhost:3000/`*
-<!-- TODO: Add home.png after capturing browser screenshot -->
+
 ![Home Route](./screenshots/home.png)
 
 ### 2. About Route (`GET /about`)
 *Endpoint: `http://localhost:3000/about`*
-<!-- TODO: Add about.png after capturing browser screenshot -->
+
 ![About Route](./screenshots/about.png)
 
 ### 3. Time Route (`GET /time`)
 *Endpoint: `http://localhost:3000/time`*
-<!-- TODO: Add time.png after capturing browser screenshot -->
+
 ![Time Route](./screenshots/time.png)
 
 ### 4. 404 Not Found Route (`GET /any-unknown-path`)
 *Endpoint: `http://localhost:3000/any-unknown-path`*
-<!-- TODO: Add not-found.png after capturing browser screenshot -->
+
 ![404 Not Found Route](./screenshots/not-found.png)
 
 ---
