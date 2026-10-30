@@ -2,12 +2,19 @@
   "name": "backend-labs",
   "version": "1.0.0",
   "description": "Coursework repository for Backend Development Frameworks (BDF) Labs",
-  "main": "lab-01/server.js",
+  "main": "server.js",
   "scripts": {
-    "install:lab01": "npm --prefix lab-01 install",
+    "start": "node server.js",
     "build": "npm --prefix lab-01 install",
-    "start": "node lab-01/server.js",
+    "postinstall": "npm --prefix lab-01 install",
+    "install:lab01": "npm --prefix lab-01 install",
     "test": "npm --prefix lab-01 test"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "author": "G. AKSHAY",
   "license": "ISC"

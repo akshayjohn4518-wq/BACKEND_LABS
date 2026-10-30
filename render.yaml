@@ -3,8 +3,8 @@ services:
     name: backend-labs
     runtime: node
     plan: free
-    buildCommand: npm --prefix lab-01 install
-    startCommand: node lab-01/server.js
+    buildCommand: npm install
+    startCommand: node server.js
     envVars:
       - key: NODE_VERSION
         value: 20.18.0
