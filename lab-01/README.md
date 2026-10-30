@@ -2,7 +2,7 @@
 
 **Course:** Backend Development Frameworks (BDF)  
 **Deployment Status:** Pending Deployment (Local development & verification complete)  
-**Live Deployment URL:** `[PENDING - Will be updated upon hosting/deployment]`
+**Live Deployment URL: https://backend-labs-6mka.onrender.com
 
 ---
 
