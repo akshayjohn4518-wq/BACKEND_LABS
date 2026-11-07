@@ -4,7 +4,12 @@ const { app, initializeDBAndServer } = require('./lab-03/server.js');
 
 const PORT = process.env.PORT || 3000;
 
-// Mount Lab 1 Routes on top of the gateway
+// Redirect root '/' directly to '/books/' so opening the live Render link immediately displays Lab 3 output
+app.get('/', (req, res) => {
+  res.redirect('/books/');
+});
+
+// Lab 1 Compatibility Endpoints
 app.get('/about', (req, res) => {
   res.status(200).json({
     name: 'G. AKSHAY',
