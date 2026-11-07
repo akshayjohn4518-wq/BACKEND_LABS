@@ -22,3 +22,7 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Postman local mode directories (root only)
+/.postman/
+/postman/
+
