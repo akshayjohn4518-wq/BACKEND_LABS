@@ -1,17 +1,18 @@
 {
   "name": "backend-labs",
   "version": "1.0.0",
-  "description": "Coursework repository for Backend Development Frameworks (BDF) Labs",
+  "description": "Coursework repository for Backend Development Frameworks (BDF) Labs - G. AKSHAY (252U1R8025)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "npm --prefix lab-01 install",
-    "postinstall": "npm --prefix lab-01 install",
-    "install:lab01": "npm --prefix lab-01 install",
-    "test": "npm --prefix lab-01 test"
+    "build": "npm --prefix lab-01 install && npm --prefix lab-02 install && npm --prefix lab-03 install",
+    "postinstall": "npm --prefix lab-01 install && npm --prefix lab-02 install && npm --prefix lab-03 install",
+    "test": "npm --prefix lab-03 test"
   },
   "dependencies": {
-    "express": "^5.3.0"
+    "express": "^5.3.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
   },
   "engines": {
     "node": ">=18.0.0"

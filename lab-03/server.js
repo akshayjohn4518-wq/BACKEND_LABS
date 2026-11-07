@@ -377,6 +377,23 @@ app.delete('/books/:bookId/', async (req, res) => {
   }
 });
 
+// Coursework Compatibility Endpoints (Lab 1)
+app.get('/about', (req, res) => {
+  res.status(200).json({
+    name: 'G. AKSHAY',
+    registrationNumber: '252U1R8025',
+    section: 'S-14'
+  });
+});
+
+app.get('/time', (req, res) => {
+  const now = new Date();
+  res.status(200).json({
+    currentTime: now.toISOString(),
+    humanReadable: now.toString()
+  });
+});
+
 // Catch-all 404 handler for unknown routes
 app.use((req, res) => {
   res.status(404).json({

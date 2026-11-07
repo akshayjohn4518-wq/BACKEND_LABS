@@ -1,8 +1,45 @@
 services:
+  # 1. Main Unified Coursework Portal (serves Lab 1, Lab 2, and Lab 3)
   - type: web
     name: backend-labs
     runtime: node
     plan: free
+    buildCommand: npm run build
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+
+  # 2. Dedicated Web Service for Lab 1 (Node.js & Express Server)
+  - type: web
+    name: bdf-lab-01
+    runtime: node
+    plan: free
+    rootDir: lab-01
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+
+  # 3. Dedicated Web Service for Lab 2 (SQLite Database & CRUD Routes)
+  - type: web
+    name: bdf-lab-02
+    runtime: node
+    plan: free
+    rootDir: lab-02
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+
+  # 4. Dedicated Web Service for Lab 3 (REST API, Query Parameters & Validation)
+  - type: web
+    name: bdf-lab-03
+    runtime: node
+    plan: free
+    rootDir: lab-03
     buildCommand: npm install
     startCommand: node server.js
     envVars:

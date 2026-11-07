@@ -1,8 +1,8 @@
 # Lab 3: REST API, query parameters, validation, debugging
 
 **Course:** Backend Development Frameworks (BDF)  
-**Deployment Status:** Not deployed yet  
-**Live Deployment URL:** `[Not deployed yet - Local verification complete]`
+**Deployment Status:** Live on Render  
+**Live Deployment URL:** https://backend-labs-6mka.onrender.com
 
 ---
 
